@@ -31,4 +31,25 @@ public class MaxTest {
         int result = Max.max(a, b);
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenMaxA5B5C10Then10() {
+        int a = 5;
+        int b = 5;
+        int c = 10;
+        int expected = 10;
+        int result = Max.max(a, b, c);
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMaxA5B5C10D20Then20() {
+        int a = 5;
+        int b = 5;
+        int c = 10;
+        int d = 20;
+        int expected = 20;
+        int result = Max.max(a, b, c, d);
+        assertThat(result).isEqualTo(expected);
+    }
 }
